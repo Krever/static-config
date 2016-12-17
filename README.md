@@ -4,7 +4,7 @@ lines of relevant code, but is still quite usefull.
 
 ## Install
 
-`"com.github.krever" %% "static-config" % "1.0.1"`
+`"com.github.krever" %% "static-config" % "1.1.0"`
 
 
 ## Usage
