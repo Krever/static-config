@@ -1,5 +1,5 @@
 # static-config
-It is a tiny library allowing to scrap some boilerplate when working with typsafehub/config. It contains literally 5
+It is a tiny library allowing to scrap some boilerplate when working with typsafehub/config. It contains less then 10 relevant
 lines of relevant code, but is still quite usefull.
 
 ## Install
@@ -45,7 +45,7 @@ object SConfigExample extends SConfig {
 ```
 
 ## Motivation
-Will be availible soon
+It can be found [here](http://w.pitula.me/2016/static-config/).
 
 ## Why not to go further?
 We could take one more step and make an sbt-plugin that will generate such code directly from `application.conf`.
