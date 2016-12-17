@@ -6,13 +6,13 @@ object SConfigExample extends SConfig {
 
   override def config: Config = ConfigFactory.load()
 
-  object `static-config` extends SConfigNode(config) {
+  object `static-config` extends LocalSConfigNode {
 
     val intEntry = configEntry(_.getInt)
 
     val stringEntry = configEntry(_.getString)
 
-    object group extends SConfigNode(config) {
+    object group extends LocalSConfigNode {
 
       val listEntry = configEntry(_.getStringList)
 

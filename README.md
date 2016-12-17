@@ -3,7 +3,9 @@ It is a tiny library allowing to scrap some boilerplate when working with typsaf
 lines of relevant code, but is still quite usefull.
 
 ## Install
-Work in progress, will be availible in mvn soon.
+
+`"com.github.krever" %% "static-config" % "1.0.1"`
+
 
 ## Usage
 
@@ -28,11 +30,11 @@ object SConfigExample extends SConfig {
 
   override def config: Config = ConfigFactory.load()
 
-  object `static-config` extends SConfigNode(config) {
+  object `static-config` extends LocalSConfigNode {
     val intEntry = configEntry(_.getInt)
     val stringEntry = configEntry(_.getString)
 
-    object group extends SConfigNode(config) {
+    object group extends LocalSConfigNode {
       val listEntry = configEntry(_.getStringList)
       val durationEntry = configEntry(_.getDuration)
     }

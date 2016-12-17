@@ -9,6 +9,8 @@ trait SConfig {
 
   def configEntry[T](extractor: Config => String => T)(implicit valName: sourcecode.Name): T = extractor(config)(valName.value)
 
+  class LocalSConfigNode(implicit objName: sourcecode.Name) extends SConfigNode(config)(objName)
+
 }
 
 abstract class SConfigNode(parentConfig: Config)(implicit objName: sourcecode.Name) extends SConfig {
