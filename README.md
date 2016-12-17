@@ -22,7 +22,7 @@ static-config {
 other-config = 2
 ```
 ###### SConfigExample.scala
-```
+```scala
 import com.typesafe.config.{Config, ConfigFactory}
 import staticconfig._
 
