@@ -1,6 +1,6 @@
 # static-config
 It is a tiny library allowing to scrap some boilerplate when working with typsafehub/config. It contains less then 10 relevant
-lines of relevant code, but is still quite usefull.
+lines of code, but is still quite usefull.
 
 ## Install
 
