@@ -50,3 +50,9 @@ It can be found [here](http://w.pitula.me/2016/static-config/).
 ## Why not to go further?
 We could take one more step and make an sbt-plugin that will generate such code directly from `application.conf`.
 Although it might be possible, I'm not a big fan of code generation. Some arguments against it can be found [here](http://www.codethinked.com/code-generation-should-be-the-nuclear-option).
+
+## Other libraries
+If you're fine with compiler plugin and annotations, there is great [wacai/config-annotation](https://github.com/wacai/config-annotation).
+
+Other wrappers around Typesafe  Config can be found [here](https://github.com/typesafehub/config#scala-wrappers-for-the-java-library)
+
